@@ -1,4 +1,4 @@
-/* Reset minimal */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -7,57 +7,62 @@
 
 body {
   background-color: #000;
-  color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 /* Navigation */
-.navbar {
-  padding: 20px;
-  text-align: center;
+header {
+  padding-top: 20px;
 }
 
-.navbar ul {
-  list-style: none;
+nav {
   display: flex;
   justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
 }
 
-.navbar li {
-  color: white;
-  font-size: 0.9rem;
+.nav-links {
   display: flex;
+  list-style: none;
+  gap: 60px;
   align-items: center;
-  gap: 8px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
 }
 
-.navbar a {
-  text-decoration: none;
+.nav-links li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: white;
+  cursor: pointer;
   transition: color 0.3s ease;
 }
 
-.navbar a:hover {
+.nav-links li:hover {
   color: #00ff00;
+}
+
+.nav-links i {
+  font-size: 1rem;
+  margin-bottom: 5px;
 }
 
 /* Hero Section */
 .hero {
   flex: 1;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  line-height: 1.4;
+.hero h1 div {
+  font-size: 3.5rem;
+  font-weight: bold;
 }
 
 .hero .green {
