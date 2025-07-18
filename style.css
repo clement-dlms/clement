@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset minimal */
 * {
   margin: 0;
   padding: 0;
@@ -7,57 +7,59 @@
 
 body {
   background-color: #000;
-  font-family: 'Arial', sans-serif;
-  color: #fff;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* Navbar */
+/* Navigation */
 .navbar {
-  display: flex;
-  justify-content: center;
   padding: 20px;
-  background-color: transparent;
+  text-align: center;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 50px;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .navbar li {
-  color: #fff;
-  font-size: 0.85rem;
-  cursor: pointer;
+  color: white;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
   transition: color 0.3s ease;
 }
 
-.navbar li:hover {
-  color: #00ff5e;
+.navbar a:hover {
+  color: #00ff00;
 }
 
-/* Main content */
-.center-content {
-  flex-grow: 1;
+/* Hero Section */
+.hero {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
-h1 {
+.hero h1 {
   font-size: 3rem;
-  font-weight: bold;
-  line-height: 1.8;
+  line-height: 1.4;
 }
 
-.white {
-  color: white;
-}
-
-.green {
-  color: #00ff5e;
+.hero .green {
+  color: #00ff00;
 }
